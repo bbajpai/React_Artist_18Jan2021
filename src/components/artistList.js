@@ -7,8 +7,13 @@ const ArtistList = (props)=>{
         console.log(props)
         if(allArtists){
             return allArtists.map((item)=>{
+
+                const style={
+                    background:`url('/images/covers/${item.cover}.jpg') no-repeat`
+                }
+
                 return(
-                    <Link key={item.id} class="artist_item">
+                    <Link key={item.id} class="artist_item" to={`/artist/${item.id}`} style={style}>
                         <div>{item.name}</div>
                     </Link>
                 )
