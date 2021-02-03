@@ -113,3 +113,13 @@ header{
     color:#393939;
 }
 
+.albums_list{
+    margin:20px;
+}
+
+.albums_list:after{
+    clear:both;
+    display:table;
+    content: '';
+}
+
